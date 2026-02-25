@@ -36,6 +36,6 @@ function kategoriTipeData(data) {
   console.log('Array   :', result.array);
 }
 
-let data = [8, 'aqil', false, { nama: 'ahmad' },[4, 5, 6], false, 22, { umur: 21 }];
+let obj = [8, 'aqil', false, { nama: 'ahmad' },[4, 5, 6], false, 22, { umur: 21 }];
 
-kategoriTipeData(data);
+kategoriTipeData(obj);
