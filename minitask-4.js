@@ -17,13 +17,13 @@ function kategoriTipeData(data) {
     } else {
       switch (typeof item) {
         case 'number':
-          result.number++;
+          result['number']++;
           break;
         case 'string':
-          result.string++;
+          result['string']++;
           break;
         case 'boolean':
-          result.boolean++;
+          result['boolean']++;
           break;
       }
     }
@@ -36,6 +36,15 @@ function kategoriTipeData(data) {
   console.log('Array   :', result.array);
 }
 
-let obj = [8, 'aqil', false, { nama: 'ahmad' },[4, 5, 6], false, 22, { umur: 21 }];
+let obj = [
+  8,
+  'aqil',
+  false,
+  { nama: 'ahmad' },
+  [4, 5, 6],
+  false,
+  22,
+  { umur: 21 },
+];
 
 kategoriTipeData(obj);
